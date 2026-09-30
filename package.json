@@ -1,0 +1,22 @@
+{
+  "name": "natpilot",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Internal SonicWall NAT and port-forward manager",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "init": "node server.js init",
+    "test": "node --test",
+    "check": "node --check server.js && node --check src/app.js && node --check src/config.js && node --check src/store.js && node --check src/sonicwall.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "node-fetch": "^2.7.0"
+  }
+}
